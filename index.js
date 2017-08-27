@@ -8,17 +8,11 @@ function createMultiplier(multiplierValue) {
   }
 }
 
-function doubler(n) {
-  return createMultiplier(2)(n);
-}
-
-function tripler(n) {
-  return createMultiplier(3)(n);
-}
-
 function multiplier(x, y) {
   return x * y;
 }
 
+var doubler = createMultiplier(2);
+var tripler = createMultiplier(3);
 var doublerWithBind = multiplier.bind(null, 2);
 var triplerWithBind = multiplier.bind(null, 3);
