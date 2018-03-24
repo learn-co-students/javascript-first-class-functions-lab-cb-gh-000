@@ -48,7 +48,7 @@ describe('index', function() {
     });
   });
 
-  describe('Multiplier functions created with `createMultiplierBonus`', function () {
+  describe('Multiplier functions created with `createMultiplier`', function () {
     it('should have a doubler function', function () {
       expect(doubler).toExist();
       expect(doubler).toBeA('function');
