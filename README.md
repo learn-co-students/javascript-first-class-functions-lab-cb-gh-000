@@ -1,7 +1,7 @@
 Functions Returning Functions Lab
 ---
 
-## Objectives
+## Objectivesh
 
 1. Practice writing functions that return other functions
 2. Practice passing a function to another function
