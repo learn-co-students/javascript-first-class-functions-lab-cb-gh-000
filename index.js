@@ -1,6 +1,5 @@
 function countdown(callback) {
   setTimeout(callback, 2000);
-
 }
 
 function createMultiplier(multiplierValue) {
@@ -9,15 +8,15 @@ function createMultiplier(multiplierValue) {
   }
 }
 
-// let createMultiplierBonus = createMultiplier
-// pretty sure this is what's needed here.
-let doubler = createMultiplier(2)
-let tripler = createMultiplier(3)
+// cant use es6 variables?
+var doubler = createMultiplier(2)
+var tripler = createMultiplier(3)
 
 function multiplier(multiplierValue, value) {
   return multiplierValue * value
 }
 
-let doublerWithBind = multiplier.bind(null, 2)
+var doublerWithBind = multiplier.bind(null, 2)
+var triplerWithBind = multiplier.bind(null, 3)
 
 // console.log(doublerWithBind(3))
